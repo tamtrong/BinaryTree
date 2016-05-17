@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BinarySearchTree.BinaryTreeImp&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAgAAAAAAAAQAAAAAgAAAAAAQA=</HashCode>
+      <FileName>BinaryTreeImp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BinarySearchTree.BinaryTreeImpLNRIterator&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>BinaryTreeImpLNRIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BinarySearchTree.BinaryTreeImpNLRIterator&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>BinaryTreeImpNLRIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BinarySearchTree.BinaryTreeNode&lt;T&gt;" Collapsed="true">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>BinaryTreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinarySearchTree.Note&lt;T&gt;" Collapsed="true">
+    <Position X="1.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAABAAIAACAAAAAAA=</HashCode>
+      <FileName>Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BinarySearchTree.Iterator&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Iterator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BinarySearchTree.TreeImp&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAQA=</HashCode>
+      <FileName>TreeImp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
