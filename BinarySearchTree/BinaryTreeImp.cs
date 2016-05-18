@@ -39,7 +39,7 @@ namespace BinarySearchTree
 
         public void  removeNode(int value)
         {
-            throw new NotImplementedException();
+            System.Console.WriteLine("Test!!");
         }
     }
 }
