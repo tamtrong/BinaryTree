@@ -12,13 +12,24 @@ namespace BinarySearchTree
         {
             BinaryTreeImp BST = new BinaryTreeImp();
            
-            BST.insertNode(3);
+            BST.insertNode(13);
             BST.insertNode(5);
-            //BST.insertNode(6);
-            //BST.insertNode(9);
-            //BST.insertNode(13);
-            //BST.insertNode(20);
+            BST.insertNode(66);
+            BST.insertNode(9);
+            BST.insertNode(17);
+            BST.insertNode(20);
 
+            Iterator ite = BST.getIterator();
+            ite.first();
+            Console.WriteLine(ite.current().Value);
+            ite.next();
+            Console.WriteLine(ite.current().Value);
+            for (ite.first(); !ite.isDone(); ite.next())
+            {
+               Console.Write( ite.current().Value +" ");
+            }
+
+      
         }
     }
 }

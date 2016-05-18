@@ -48,15 +48,17 @@ namespace BinarySearchTree
         public void next()
         {
             _currentNodeIndex++;
-            if (_currentNodeIndex >= _listValue.Count)
-                _currentNodeIndex = _listValue.Count;
+            if (isDone())
+                return;
+
             this._currentValue = _listValue[_currentNodeIndex];
+     
             
         }
 
         public bool isDone()
         {
-            return _currentNodeIndex == _listValue.Count - 1;
+            return _currentNodeIndex == _listValue.Count;
         }
 
         public Node current()

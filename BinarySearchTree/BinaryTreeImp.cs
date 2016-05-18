@@ -41,5 +41,11 @@ namespace BinarySearchTree
         {
             System.Console.WriteLine("Test!!");
         }
+
+
+        public Iterator getIterator()
+        {
+            return new BinaryTreeImpLNRIterator(this._root);
+        }
     }
 }

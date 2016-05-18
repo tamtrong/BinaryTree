@@ -10,3 +10,8 @@ F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinaryS
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.pdb
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.exe
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.pdb
+E:\HK8\Mẫu thiết kế HĐT\Code\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.exe.config
+E:\HK8\Mẫu thiết kế HĐT\Code\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.exe
+E:\HK8\Mẫu thiết kế HĐT\Code\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.pdb
+E:\HK8\Mẫu thiết kế HĐT\Code\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.exe
+E:\HK8\Mẫu thiết kế HĐT\Code\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.pdb

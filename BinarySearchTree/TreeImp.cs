@@ -10,7 +10,8 @@ namespace BinarySearchTree
     {
         void insertNode(int value);
         void removeNode( int value);
- 
+
+        Iterator getIterator();
         
 
 

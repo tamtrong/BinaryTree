@@ -11,14 +11,14 @@ namespace BinarySearchTree
 
         public BinaryTreeNode() { }
 
-        public BinaryTreeNode(int data) : base(data, null) { }
+        public BinaryTreeNode(int data) : this(data, null,null) { }
 
         public BinaryTreeNode(int data, BinaryTreeNode left, BinaryTreeNode right)
         {
             this._value = data;
             this._neighbors = new  List<Node>(2) ;
-            this._neighbors[0] = left;
-            this._neighbors[1] = right;
+            this._neighbors.Add(left);
+            this._neighbors.Add(right);
         }
 
         public Node LeftNode
@@ -33,7 +33,8 @@ namespace BinarySearchTree
             {
                 if (_neighbors == null)
                     _neighbors = new List<Node>(2);
-                this._neighbors[0] = value; 
+                this._neighbors[0]=value;
+               
             }
         }
 
@@ -49,7 +50,7 @@ namespace BinarySearchTree
             {
                 if (_neighbors == null)
                     _neighbors = new List<Node>(2);
-                this._neighbors[1] = value;
+                this._neighbors[1]=value;
             }
         }
 
