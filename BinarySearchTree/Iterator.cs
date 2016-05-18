@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public interface Iterator<T>
+    public interface Iterator
     {
         void first();
         void next();
         bool isDone();
-        Note<T> current();
+        Node current();
     }
 }

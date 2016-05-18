@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinaryTreeImpNLRIterator<T> : Iterator<T>
+    public class BinaryTreeImpNLRIterator : Iterator
     {
         public void first()
         {
@@ -22,7 +22,7 @@ namespace BinarySearchTree
             return true;
         }
 
-        public Note<T> current()
+        public Node current()
         {
             return null;
         }

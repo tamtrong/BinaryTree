@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public interface TreeImp<T>
+    public interface TreeImp
     {
-        bool addNote(Note<T> newNote);
-        bool removeNote(Note<T> note);
-        bool removeNote(T data);
-        int getHeight();
-        int getDepth();
+        void insertNode(int value);
+        void removeNode( int value);
+ 
         
 
 

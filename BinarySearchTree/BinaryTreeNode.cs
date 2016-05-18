@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinaryTreeNode<T> : Note<T> 
+    public class BinaryTreeNode : Node
     {
 
         public BinaryTreeNode() { }
 
-        public BinaryTreeNode(T data) : base(data, null) { }
+        public BinaryTreeNode(int data) : base(data, null) { }
 
-        public BinaryTreeNode(T data, BinaryTreeNode<T> left, BinaryTreeNode<T> right)
+        public BinaryTreeNode(int data, BinaryTreeNode left, BinaryTreeNode right)
         {
-            this._data = data;
-            this._neighbors = new List<Note<T>>(2);
+            this._value = data;
+            this._neighbors = new  List<Node>(2) ;
             this._neighbors[0] = left;
             this._neighbors[1] = right;
         }
 
-        public Note<T> LeftNote
+        public Node LeftNode
         {
             get 
             {
@@ -32,12 +32,12 @@ namespace BinarySearchTree
             set 
             {
                 if (_neighbors == null)
-                    _neighbors = new List<Note<T>>(2);
+                    _neighbors = new List<Node>(2);
                 this._neighbors[0] = value; 
             }
         }
 
-        public Note<T> RightNote
+        public Node RightNode
         {
             get
             {
@@ -48,9 +48,31 @@ namespace BinarySearchTree
             set
             {
                 if (_neighbors == null)
-                    _neighbors = new List<Note<T>>(2);
+                    _neighbors = new List<Node>(2);
                 this._neighbors[1] = value;
             }
+        }
+
+        public  Node FindByValue(int value)
+        {
+            BinaryTreeNode node = (BinaryTreeNode)this;
+            while (node != null)
+            {
+                if (value.Equals(node.Value))
+                {
+                    return node;
+                }
+                if (value < node.Value)
+                {
+                    node = (BinaryTreeNode)node.LeftNode;
+                }
+                else
+                {
+                    node = (BinaryTreeNode)node.RightNode;
+
+                }
+            }
+            return null;
         }
     }
 }

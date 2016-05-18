@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class Context<T>
+    public class Context
     {
-        private TreeImp<T> _treeData;
+        private TreeImp _treeData;
 
-        public TreeImp<T> TreeData
+        public TreeImp TreeData
         {
             get { return _treeData; }
             set { _treeData = value; }
         }
 
-        public Context(TreeImp<T> data)
+        public Context(TreeImp data)
         {
             this._treeData = data;
         }

@@ -4,3 +4,9 @@ F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinarySearchTree\B
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinarySearchTree\BinarySearchTree\bin\Debug\BinarySearchTree.pdb
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinarySearchTree\BinarySearchTree\obj\Debug\BinarySearchTree.exe
 F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinarySearchTree\BinarySearchTree\obj\Debug\BinarySearchTree.pdb
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.exe.config
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.csprojResolveAssemblyReference.cache
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.exe
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\bin\Debug\BinarySearchTree.pdb
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.exe
+F:\HKII 2015_2016\DESIGN PATTERN AND APPLICATION\FinalProject\BinaryTree\BinarySearchTree\obj\Debug\BinarySearchTree.pdb

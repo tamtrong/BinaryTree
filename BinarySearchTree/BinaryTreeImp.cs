@@ -6,31 +6,38 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinaryTreeImp<T> : TreeImp<T>
+    public class BinaryTreeImp : TreeImp
     {
-        private BinaryTreeNode<T> root;
+        private BinaryTreeNode _root;
 
-        public bool addNote(Note<T> newNote)
+
+        public void insertNode(int value)
         {
-            throw new NotImplementedException();
+            _root = insert(_root, value);
         }
 
-        public bool removeNote(Note<T> note)
+        private BinaryTreeNode insert (BinaryTreeNode root, int value)
         {
-            throw new NotImplementedException();
+            if(root == null)
+            {
+                root = new BinaryTreeNode(value);
+                return root;
+            }
+
+            if(value < root.Value)
+            {
+                root.LeftNode = insert((BinaryTreeNode)root.LeftNode, value);
+            }
+
+            else if(value > root.Value)
+            {
+                root.RightNode = insert((BinaryTreeNode)root.RightNode, value);
+            }
+
+            return root;
         }
 
-        public bool removeNote(T data)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int getHeight()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int getDepth()
+        public void  removeNode(int value)
         {
             throw new NotImplementedException();
         }

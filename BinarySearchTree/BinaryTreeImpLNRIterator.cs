@@ -6,26 +6,63 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinaryTreeImpLNRIterator<T> : Iterator<T>
+    public class BinaryTreeImpLNRIterator : Iterator
     {
+        private BinaryTreeNode _root;
+        private BinaryTreeNode _current;
+
+        private List<int> _listValue;
+        private int _currentValue;
+        private int _currentNodeIndex;
+
+        public BinaryTreeImpLNRIterator(BinaryTreeNode root)
+        {
+            this._root = root;
+            _listValue = new List<int>();
+            SortNodeList();
+        }
+
+        private void SortNodeList()
+        {
+            LNR(this._root);
+        
+        }
+
+        private void LNR(BinaryTreeNode node)
+        {
+            if(node != null)
+            {
+                LNR((BinaryTreeNode)node.LeftNode);
+                _listValue.Add(node.Value);
+                LNR((BinaryTreeNode)node.RightNode);
+
+            }
+        }
+
+
         public void first()
         {
-            
+            this._currentValue = _listValue[0];
+            this._currentNodeIndex = 0;
         }
 
         public void next()
         {
+            _currentNodeIndex++;
+            if (_currentNodeIndex >= _listValue.Count)
+                _currentNodeIndex = _listValue.Count;
+            this._currentValue = _listValue[_currentNodeIndex];
             
         }
 
         public bool isDone()
         {
-            return true;
+            return _currentNodeIndex == _listValue.Count - 1;
         }
 
-        public Note<T> current()
+        public Node current()
         {
-            return null;
+            return this._root.FindByValue(this._currentValue);
         }
     }
 }
