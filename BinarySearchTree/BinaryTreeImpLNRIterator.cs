@@ -9,8 +9,7 @@ namespace BinarySearchTree
     public class BinaryTreeImpLNRIterator : Iterator
     {
         private BinaryTreeNode _root;
-        private BinaryTreeNode _current;
-
+  
         private List<int> _listValue;
         private int _currentValue;
         private int _currentNodeIndex;
