@@ -15,7 +15,7 @@ namespace BinarySearchTree
         {
             _root = insert(_root, value);
         }
-
+        
         private BinaryTreeNode insert (BinaryTreeNode root, int value)
         {
             if(root == null)
