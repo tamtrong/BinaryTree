@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="~/Scripts/js/node.js"></script>
+    <style>
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1024" height="1024">
+        webgl couldn't be started
+    </canvas>
+    <script>
+        canvasHolder = document.getElementById('canvas');
+        context = canvasHolder.getContext('2d');
+
+        context.fillStyle = 'white';
+        var w = canvasHolder.width, h = canvasHolder.height;
+        context.fillRect(0, 0, w, h);
+
+        //set the direction the line draws in
+        //1->ltr | -1->rtl
+        var dir = -1;
+        //IMPORTANT: this must be set to greater than the length
+        //of the line
+        var length = 608;
+        //the speed of the line draw
+        var speed = 1;
+        var progress = 0;
+        var lineInterval;
+
+        //Go!
+        // create node
+
+
+        //  context.globalCompositeOperation='copy';
+        function drawNormalLine(path) {
+
+            for (i = 0; i < path.length - 1; i++) {
+                context.beginPath();
+                context.lineWidth = 1;
+                context.strokeStyle = 'black';
+                context.moveTo(path[i].point.x, path[i].point.y);
+                context.lineTo(path[i + 1].point.x, path[i + 1].point.y);
+                context.stroke();
+                context.closePath();
+            }
+            for (j = 0; j < path.length; j++) {
+                drawNode(context, path[j], 15);
+
+
+            }
+
+        };
+        drawNormalLine(nodePath);
+        //  setTimeout(drawLine(),3000);
+        drawLine();
+
+
+
+        function drawLine() {
+            //this clears itself once the line is drawn
+            lineInterval = setInterval(updateLine, 1);
+        };
+
+        function updateLine() {
+            //define the line
+            drawNodePath(nodePath);
+
+            if (progress < length) {
+                progress += speed;
+                moveDash(progress, dir);
+
+            } else {
+                clearInterval(lineInterval);
+                context.clearRect(0, 0, canvasHolder.width, canvasHolder.height);
+                drawNormalLine(nodePath);
+            }
+
+        }
+
+        function drawNodePath(path) {
+            context.beginPath();
+            context.moveTo(path[0].point.x, path[0].point.y);
+            for (i = 1; i < path.length; i++) {
+                context.lineTo(path[i].point.x, path[i].point.y);
+            }
+            context.lineWidth = 5;
+            context.strokeStyle = 'blue';
+
+        };
+
+
+
+        function moveDash(frac, dir) {
+            //default direction right->left
+            var dir = dir || -1
+            context.setLineDash([length]);
+            context.lineDashOffset = dir * (frac + length);
+            context.stroke();
+        };
+    </script>
+</body>
+
+</body>
+</html>
