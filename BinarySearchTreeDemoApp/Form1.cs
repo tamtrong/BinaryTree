@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace BinarySearchTreeDemoApp
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         public Form1()
         {
@@ -46,9 +47,15 @@ namespace BinarySearchTreeDemoApp
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            this.splitContainer1.Panel2.Invalidate();
+            //this.splitContainer1.Panel2.Invalidate();
            
         }
+
+        private void metroLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
        
     }
